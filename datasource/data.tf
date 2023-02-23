@@ -5,6 +5,6 @@ data "aws_ami" "ami" {
 
 }
 
-value "ami_id" {
-    output = data.aws_ami.ami.image_id
+output "ami_id" {
+    value = data.aws_ami.ami.image_id
 }
